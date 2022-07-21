@@ -22,4 +22,7 @@ export class BookDetailsComponent implements OnInit {
               })
   }
 
+  onDeleteHandler(){
+    this.bookService.deletedArray(this.isbn);
+  }
 }

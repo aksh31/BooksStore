@@ -2,8 +2,8 @@
 
 
 <div class="container-fluid">
-    <div class="row  p-5">
-        <div class="col-sm-12 text-center text-info">
+    <div class="row bg-info mb-5 p-5">
+        <div class="col-sm-12 text-center text-dark">
             <h1>Developers Books</h1>
         </div>
     </div>
@@ -12,7 +12,7 @@
     <div class="container-lg">
         <div class="row">
             <div class="col-sm-3">
-                <ul class="list-group">
+                <ul class="list-group listCard scrollbar-hidden">
                     <li class="list-group mb-4" 
                     [routerLink]="['/books', book.isbn]"
                     *ngFor="let book of booksArray">

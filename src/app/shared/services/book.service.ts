@@ -41,5 +41,8 @@ export class BookService {
   getBook(isbn : number){
     return this.booksArray.find(book => book.isbn === isbn);
   }
-  
+
+  deletedArray(isbn :number){
+    this.booksArray = this.booksArray.filter(book => book.isbn !== isbn)
+  }
 }
